@@ -90,7 +90,7 @@ reranker_model, reranker_tokenizer = load_reranker('cross-encoder/ms-marco-MiniL
 
 reranked_passages = rerank_passages(query, retrieved_docs, reranker_model, reranker_tokenizer)
 
-print("Reranked passages based on relevance scores:")
+
 for i, (passage, score) in enumerate(reranked_passages):
     print(f"Rank {i+1}: {passage} (Score: {score})")
 
